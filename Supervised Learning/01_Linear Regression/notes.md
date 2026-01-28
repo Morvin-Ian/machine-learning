@@ -63,7 +63,7 @@ For an employee with 5 years experience, education level 4, and performance scor
 $$\text{Salary} = 20,000 + (1,500 \times 5) + (5,000 \times 4) + (0.5 \times 85)$$
 $$= 20,000 + 7,500 + 20,000 + 42.5 = 47,542.5$$
 
-## Loss Functions
+## Loss/Cost Functions
 
 Loss (also called **error** or **cost**) is a numerical measure that quantifies how wrong the model's predictions are. It measures the distance between predicted values and actual values. **Lower loss indicates better model performance.**
 
