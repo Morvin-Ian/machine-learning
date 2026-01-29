@@ -21,7 +21,7 @@ Machine learning algorithms that discover patterns in unlabeled data.
 ## Structure
 
 ```
-03-unsupervised-learning/
+02-unsupervised-learning/
 ├── README.md
 ├── notes.md                    (Overview)
 ├── clustering/
@@ -39,8 +39,10 @@ This section explores algorithms that work without labeled training data, focusi
 ## Prerequisites
 
 Complete the following sections first:
-- [01-fundamentals](../01-fundamentals) - Core concepts and mathematics
-- [02-supervised-learning](../02-supervised-learning) - Supervised learning techniques
+- [01-supervised-learning](../01-supervised-learning) - Supervised learning techniques
+
+For deeper understanding:
+- [03-deep-dives](../03-deep-dives) - Advanced mathematical concepts
 
 ## Applications
 

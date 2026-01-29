@@ -85,8 +85,10 @@ Start here:
 ## Prerequisites
 
 Complete these sections first:
-- [01-fundamentals](../01-fundamentals) - Gradient descent and optimization
-- [02-supervised-learning](../02-supervised-learning) - Regression and classification basics
+- [01-supervised-learning](../01-supervised-learning) - Regression and classification basics
+
+For deeper understanding of optimization:
+- [03-deep-dives](../03-deep-dives) - Gradient descent and core algorithms
 
 ---
 
