@@ -51,7 +51,7 @@ Where:
 
 Suppose we're predicting employee salary based on three features:
 
-$$\text{Salary} = 20,000 + 1,500 \times \text{Experience} + 5,000 \times \text{Education\_Level} + 0.5 \times \text{Performance\_Score}$$
+$$\text{Salary} = 20000 + 1500 \times \text{Experience} + 5000 \times \text{EducationLevel} + 0.5 \times \text{PerformanceScore}$$
 
 Where:
 - $b = 20,000$ (base salary)
@@ -209,7 +209,7 @@ Given: $\hat{y} = 2 + 3x$, learning rate $\alpha = 0.01$
 
 **Initial state:** $w = 0, b = 0$
 
-**Data point:** $x = 2, y_{actual} = 8$
+**Data point:** $x = 2$, $y = 8$ (actual)
 
 **Step 1:**
 - Prediction: $\hat{y} = 0 + 0 \times 2 = 0$
