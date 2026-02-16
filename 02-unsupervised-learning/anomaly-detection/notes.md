@@ -311,6 +311,18 @@ print(f"Detected {anomalies.sum()} anomalies out of {len(X_test)} points")
 | **One-Class SVM** | High-dimensional | Flexible kernel | Slow on large data |
 | **LOF** | Varying density | Local outliers | Slow, many parameters |
 
+### Local Outlier Factor (LOF) — Details
+- LOF compares a point's local density to the densities of its neighbors. Points with substantially lower local density than their neighbors get high LOF scores (anomaly). LOF is useful when normal regions have varying densities; it requires choosing `k` (number of neighbors).
+
+### Evaluation Without Labels
+- In many anomaly problems labels are scarce. Practical evaluation strategies include:
+    - Use domain expert review for the top-K scored anomalies (precision@K)
+    - Use synthetic injection of known anomalies for validation
+    - Monitor anomaly-rate stability over time and use human-in-the-loop feedback
+
+### Score Calibration and Thresholding
+- Normalize or calibrate scores from different detectors before combining (e.g., min-max or z-score) and consider precision/recall trade-offs when setting thresholds. Use business cost to pick operating point.
+
 ### Decision Guide
 
 ```

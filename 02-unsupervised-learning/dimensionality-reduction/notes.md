@@ -118,6 +118,14 @@ This is the eigenvalue equation! The eigenvector with largest eigenvalue capture
 | **Unsupervised** | Doesn't use labels |
 | **Reversible** | Can reconstruct (approximate) original data |
 
+### Practical Notes & Large Datasets
+- PCA is sensitive to feature scaling — always standardize or normalize features before applying PCA unless the units are already comparable.
+- PCA can be computed efficiently via Singular Value Decomposition (SVD); many libraries use SVD under the hood. For very large datasets, use randomized PCA implementations (`sklearn.decomposition.PCA(randomized=True)`), incremental PCA (`IncrementalPCA`) or truncated SVD to reduce memory and compute time.
+- The `whiten=True` option rescales components to unit variance; use whitened components with care because it changes distances and can harm downstream methods that rely on variance information.
+
+### PCA vs SVD
+- PCA on centered data is equivalent to performing SVD on the data matrix. Using SVD is numerically stable and often preferred when implementing PCA for large or tall matrices.
+
 ### When PCA Works Well
 
 ✅ Data has linear correlations between features

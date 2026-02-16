@@ -322,6 +322,17 @@ plt.show()
 - Clusters have varying densities
 - Data is very high-dimensional (eps becomes meaningless)
 
+### Practical Tips & Evaluation Metrics
+- For DBSCAN, pick `eps` by plotting the k-distance graph (e.g., distance to the 4th nearest neighbor) and looking for the knee where distances start increasing rapidly.
+- For K-Means, try `MiniBatchKMeans` for very large datasets; it approximates K-Means with reduced memory and faster updates.
+
+### Clustering Evaluation Metrics
+- **Silhouette Score:** Measures cohesion vs separation (range -1..1). Useful for comparing different K but sensitive to cluster shape.
+- **Davies–Bouldin Index:** Lower is better; measures average similarity between clusters.
+- **Calinski–Harabasz Index:** Higher is better; ratio of between-cluster dispersion to within-cluster dispersion.
+
+Use multiple metrics and visual inspection (after dimensionality reduction) to assess cluster quality; each metric has failure modes depending on cluster shape and density.
+
 ### Python Implementation
 
 ```python

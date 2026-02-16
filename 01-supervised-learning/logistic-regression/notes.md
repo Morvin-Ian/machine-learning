@@ -132,4 +132,24 @@ Since logistic regression is a classification algorithm, we evaluate it differen
 2. **Independence:** Observations are independent
 3. **Linear relationship:** Log-odds have a linear relationship with features
 4. **No multicollinearity:** Features are not highly correlated with each other
+ 
+## Extensions & Numerical Stability
+
+### Multiclass Logistic Regression (Softmax)
+For more than two classes, logistic regression generalizes to the softmax (a.k.a. multinomial) model. Given scores $z_k$ for class $k$:
+$$p(y=k\mid x)=\frac{e^{z_k}}{\sum_{j} e^{z_j}}$$
+Cross-entropy loss is used for training:
+$$L = -\frac{1}{m}\sum_{i=1}^{m}\sum_{k=1}^{K}y_{i,k}\log p(y=k\mid x^{(i)})$$
+
+### Numerical Stability
+- When computing log-loss, use stable expressions to avoid log(0). For example compute logits first and use the log-sum-exp trick when implementing softmax and cross-entropy.
+- For sigmoid-based log loss, clip predictions to a small epsilon (e.g., 1e-15) before taking log, or compute loss from logits directly to preserve stability.
+
+### Class Imbalance and Calibration
+- If classes are imbalanced, consider `class_weight` (or sample weighting), oversampling the minority class, or using metrics like precision-recall AUC and F1 instead of accuracy.
+- For probability calibration (when probabilities themselves must be well-calibrated), use Platt scaling or isotonic regression (e.g., `CalibratedClassifierCV` in scikit-learn).
+
+### Regularized Logistic Regression Notes
+- Regularization is applied to the loss (penalized log-likelihood). For L2, the penalty is added to the loss and gradients; for L1 use an optimizer that supports sparsity (or coordinate descent).
+- When using regularization, tune the regularization strength with cross-validation; strong regularization shrinks weights and reduces variance at the cost of bias.
     
