@@ -408,5 +408,8 @@ combined_score = (normalize(score_if) + normalize(score_lof)) / 2
 
 ## Next Steps
 
-- [Clustering](../clustering/notes.md) - Anomalies often stand alone (no cluster)
-- [Dimensionality Reduction](../dimensionality-reduction/notes.md) - Reduce noise before detection
+**Unsupervised Learning Complete!**
+
+- Continue to [Deep Dives](../../03-deep-dives/working-with-data/README.md) — understand data preparation
+- Learn: [Gradient Descent](../../03-deep-dives/gradient-descent/notes.md) — how models learn
+- Explore: [Neural Networks](../../advanced%20ml%20conceptss/neural-networks.md) — modern ML techniques

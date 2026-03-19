@@ -118,6 +118,8 @@ These strategies are often used with simpler models (e.g. SVMs) but the “softm
 ## When to Reach for Neural Networks
 Use them when you have ample data with complex structure, when handcrafted features fall short, or when you need models capable of learning representations directly from raw inputs. For small or simple datasets, classical methods may perform just as well with far less compute.
 
----
+## Next Steps
 
-This document now addresses the earlier learning objectives and provides a broad reference for further exploration.```
+- [Embeddings](./embeddings.md) — dense vector representations
+- [Intro to LLMs](./intro-to-llms.md) — large language models
+- [Production ML](../real%20world%20ml/production.md) — deploy models to production```

@@ -1502,7 +1502,8 @@ Increasing training error is unusual
 
 ---
 
-**Next Steps:**
-- [Practical Workflow](./notes.md#practical-workflow)
-- [Regularization Deep Dive](../regularization/notes.md) (coming soon)
-- [Cross-Validation](../cross-validation/notes.md) (coming soon)
+## Next Steps
+
+- [Working with Data](./notes.md) — data preparation foundations
+- [Gradient Descent](../gradient-descent/notes.md) — optimization algorithms
+- [Neural Networks](../../advanced%20ml%20conceptss/neural-networks.md) — modern deep learning

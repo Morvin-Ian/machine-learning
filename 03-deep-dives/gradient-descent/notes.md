@@ -415,6 +415,6 @@ print(f"Learned: w = {model.coef_[0]:.4f}, b = {model.intercept_[0]:.4f}")
 
 ## Next Steps
 
-After mastering gradient descent, explore:
-- [Linear Regression](../../01-supervised-learning/linear-regression/notes.md) - Apply gradient descent to regression
-- [Logistic Regression](../../01-supervised-learning/logistic-regression/notes.md) - Apply to classification
+- [Linear Regression](../../01-supervised-learning/linear-regression/notes.md) — apply gradient descent to regression
+- [Logistic Regression](../../01-supervised-learning/logistic-regression/notes.md) — apply to classification
+- [Multiple Linear Regression](./multiple-linear-regression/notes.md) — vectorized implementation

@@ -489,5 +489,6 @@ Scales features to [0, 1] range.
 
 ## Next Steps
 
-- [Gradient Descent](../gradient-descent/notes.md) - Deep dive into optimization
-- [Linear Regression](../../01-supervised-learning/linear-regression/notes.md) - Apply these concepts
+- [Gradient Descent](./gradient-descent/notes.md) — deep dive into optimization
+- [Linear Regression](../../01-supervised-learning/linear-regression/notes.md) — apply these concepts
+- [Working with Data](./working-with-data/README.md) — data preparation foundations

@@ -1,42 +1,74 @@
-**Automated ML (AutoML) — Simple Explanation**
+# Automated ML (AutoML)
 
-What is AutoML?
-- AutoML automates parts of the machine learning workflow: model selection, hyperparameter tuning, and sometimes feature engineering or neural architecture search.
-- The goal is to make ML accessible and faster to iterate.
+Automate model selection and hyperparameter tuning.
 
-Main components
-- Search space: the set of models, preprocessing steps, and hyperparameters to try.
-- Search strategy: how to explore the search space (random search, Bayesian optimization, evolutionary search).
-- Evaluation strategy: how candidate models are measured (cross-validation, holdout sets, cost-aware metrics).
+---
 
-Kinds of automation
-- Hyperparameter tuning: automates finding good settings for a chosen model.
-- Pipeline search: composes preprocessing + model (e.g., TPOT, Auto-sklearn).
-- Neural Architecture Search (NAS): designs neural network topologies automatically.
-- End-to-end AutoML: handles feature preprocessing, model selection, and ensembling (e.g., H2O AutoML, Google AutoML, AutoGluon).
+## What is AutoML?
 
-Pros
-- Faster prototyping and baseline models with little manual effort.
-- Good for teams without deep model engineering expertise.
+AutoML automates parts of the machine learning workflow:
+- Model selection
+- Hyperparameter tuning
+- Sometimes feature engineering or neural architecture search
 
-Cons and caveats
-- Can be compute-heavy and costly for large search spaces.
-- May yield overly complex models that are hard to maintain.
-- Still requires human oversight for data quality, fairness, and production-readiness.
+**Goal:** Make ML accessible and faster to iterate.
 
-When to use AutoML
-- Use it for quick baselines, proof-of-concepts, or when feature engineering is standard.
-- Avoid for highly custom architectures or when interpretability and strict constraints are required.
+---
 
-Practical tips
-- Limit search space to reasonable model families.
-- Use budgeted runs (max time or trials).
-- Validate final model with domain-specific tests before production.
+## Core Components
 
-Tooling examples
-- `Auto-sklearn`, `TPOT`, `H2O AutoML`, `AutoGluon`, cloud AutoML offerings (Google, AWS, Azure).
+| Component | Description |
+|-----------|-------------|
+| **Search space** | Set of models, preprocessing steps, and hyperparameters to try |
+| **Search strategy** | How to explore the space (random, Bayesian, evolutionary) |
+| **Evaluation strategy** | How candidates are measured (cross-validation, holdout sets) |
 
-**Example using auto-sklearn**:
+---
+
+## Types of Automation
+
+| Type | Description |
+|------|-------------|
+| **Hyperparameter tuning** | Find good settings for a chosen model |
+| **Pipeline search** | Compose preprocessing + model (TPOT, Auto-sklearn) |
+| **Neural Architecture Search** | Design network topologies automatically |
+| **End-to-end AutoML** | Feature preprocessing, model selection, ensembling |
+
+---
+
+## Pros & Cons
+
+| Pros | Cons |
+|------|------|
+| Faster prototyping | Can be compute-heavy |
+| Quick baselines | May yield complex models |
+| Good for non-experts | Still needs human oversight |
+
+---
+
+## When to Use
+
+**Use AutoML for:**
+- Quick baselines and proof-of-concepts
+- Standard feature engineering tasks
+
+**Avoid for:**
+- Highly custom architectures
+- When interpretability is required
+- Strict constraints on model complexity
+
+---
+
+## Practical Tips
+
+1. Limit search space to reasonable model families
+2. Use budgeted runs (max time or trials)
+3. Validate final model with domain-specific tests
+4. Don't skip human review for fairness and quality
+
+---
+
+## Example: Auto-sklearn
 
 ```python
 import autosklearn.classification
@@ -54,6 +86,25 @@ automl = autosklearn.classification.AutoSklearnClassifier(
 automl.fit(X_train, y_train)
 print(automl.leaderboard())
 print('Test accuracy', automl.score(X_test, y_test))
-``` 
+```
 
-Automated pipelines like TPOT work similarly but use genetic programming to evolve scikit-learn pipelines.
+---
+
+## Tooling
+
+| Tool | Type |
+|------|------|
+| Auto-sklearn | Pipeline search |
+| TPOT | Genetic programming |
+| H2O AutoML | End-to-end |
+| AutoGluon | End-to-end |
+| Google Cloud AutoML | Cloud-based |
+| AWS SageMaker Autopilot | Cloud-based |
+
+---
+
+## Next Steps
+
+- [Fairness in ML](./fairness.md) — build responsible systems
+- [Production ML](./production.md) — deploy models to production
+- [Back to Course Start](../README.md) — review the full learning path

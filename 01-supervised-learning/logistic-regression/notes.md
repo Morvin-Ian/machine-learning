@@ -133,7 +133,13 @@ Since logistic regression is a classification algorithm, we evaluate it differen
 3. **Linear relationship:** Log-odds have a linear relationship with features
 4. **No multicollinearity:** Features are not highly correlated with each other
  
-## Extensions & Numerical Stability
+---
+
+## Next: Classification Metrics →
+
+[Continue to Classification](../classification/notes.md) — learn how to evaluate classification models.
+
+Or jump to [Unsupervised Learning](../../02-unsupervised-learning/) when ready.
 
 ### Multiclass Logistic Regression (Softmax)
 For more than two classes, logistic regression generalizes to the softmax (a.k.a. multinomial) model. Given scores $z_k$ for class $k$:

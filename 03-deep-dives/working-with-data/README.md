@@ -300,20 +300,16 @@ A: When information from the test set "leaks" into training, giving unrealistic 
 
 After mastering this material:
 
-1. **Apply to real datasets**
-   - Kaggle competitions
-   - UCI Machine Learning Repository
-   - Your own projects
+1. **Apply to real datasets** — Kaggle competitions, UCI Repository, your own projects
 
-2. **Explore advanced topics**
-   - Feature engineering
-   - Advanced regularization techniques
-   - Ensemble methods
-
-3. **Study specific algorithms**
+2. **Explore algorithms**:
    - [Linear Regression](../../01-supervised-learning/linear-regression/notes.md)
    - [Logistic Regression](../../01-supervised-learning/logistic-regression/notes.md)
-   - [Classification](../../01-supervised-learning/classification/notes.md)
+   - [Clustering](../../02-unsupervised-learning/clustering/notes.md)
+
+3. **Study optimization**:
+   - [Gradient Descent](../gradient-descent/notes.md)
+   - [Multiple Linear Regression](../multiple-linear-regression/notes.md)
 
 ---
 

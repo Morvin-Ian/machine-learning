@@ -394,5 +394,6 @@ plt.show()
 
 ## Next Steps
 
-- [Dimensionality Reduction](../dimensionality-reduction/notes.md) - Reduce features before clustering
-- [Anomaly Detection](../anomaly-detection/notes.md) - Identify outliers in data
+Continue to [Dimensionality Reduction](../dimensionality-reduction/notes.md) — reduce features for better clustering.
+
+Or learn about [Anomaly Detection](../anomaly-detection/notes.md) — find outliers in your data.

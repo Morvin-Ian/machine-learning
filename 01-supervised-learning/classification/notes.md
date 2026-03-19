@@ -249,12 +249,10 @@ Actual  Positive    80       20    (TP=80, FN=20)
 
 ---
 
-## Quick Reference
+## Next Steps
 
-| Metric | What It Measures | Optimize When... |
-|--------|------------------|------------------|
-| **Accuracy** | Overall correctness | Classes are balanced |
-| **Precision** | Quality of positive predictions | FP is costly (spam filter) |
-| **Recall** | Coverage of positives | FN is costly (disease detection) |
-| **F1-Score** | Balance of P and R | Need single balanced metric |
-| **ROC-AUC** | Overall model quality | Comparing models |
+**Supervised Learning Complete!**
+
+- Continue to [Unsupervised Learning](../../02-unsupervised-learning/clustering/notes.md) — discover patterns in unlabeled data
+- Deep dive: [Working with Data](../../03-deep-dives/working-with-data/README.md) — understand data preparation
+- Learn: [Gradient Descent](../../03-deep-dives/gradient-descent/notes.md) — how models learn

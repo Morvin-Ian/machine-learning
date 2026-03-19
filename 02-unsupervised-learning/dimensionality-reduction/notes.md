@@ -368,5 +368,6 @@ Need dimensionality reduction?
 
 ## Next Steps
 
-- [Clustering](../clustering/notes.md) - Apply after reducing dimensions
-- [Anomaly Detection](../anomaly-detection/notes.md) - Find outliers in reduced space
+Learn [Anomaly Detection](../anomaly-detection/notes.md) — find outliers in your reduced-dimension data.
+
+Or continue to [Deep Dives](../../03-deep-dives/working-with-data/README.md) — understand data preparation.

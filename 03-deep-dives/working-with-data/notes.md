@@ -1658,13 +1658,13 @@ Start with your data
 └─ Use learning curves to confirm diagnosis
 ```
 
-### Further Reading
+---
 
-- [Generalization and Overfitting (detailed)](./generalization-overfitting.md)
-- [Gradient Descent](../gradient-descent/notes.md)
-- [Multiple Linear Regression](../multiple-linear-regression/notes.md)
-- [Linear Regression](../../01-supervised-learning/linear-regression/notes.md)
-- [Classification](../../01-supervised-learning/classification/notes.md)
+## Next Steps
+
+- [Generalization & Overfitting](./generalization-overfitting.md) — understand model generalization
+- [Gradient Descent](../gradient-descent/notes.md) — how models learn
+- [Neural Networks](../../advanced%20ml%20conceptss/neural-networks.md) — modern ML techniques
 
 ---
 
